@@ -15,6 +15,8 @@ This is a work-in-progress library for Digital Identity on IOTA. It follows the 
 ## Functions
 Implemented functions based on [identity.ts](https://github.com/iotaledger/identity.ts)
 
+✅ [1/25]
+
 ```javascript
 {
   DID: [Function: DID] { urlScheme: 'did', didMethod: 'IOTA' },
@@ -34,7 +36,7 @@ Implemented functions based on [identity.ts](https://github.com/iotaledger/ident
   VerifyDIDAuthentication: [Function: VerifyDIDAuthentication],
   GenerateRSAKeypair: [Function: GenerateRSAKeypair],
   GenerateECDSAKeypair: [Function: GenerateECDSAKeypair],
-  GenerateSeed: [Function: GenerateSeed],
+  GenerateSeed: [Function: GenerateSeed], // ✅
   DIDPublisher: [Function: DIDPublisher],
   MAMSettings: [Function: MAMSettings],
   MAM_MODE: { PRIVATE: 'private', PUBLIC: 'public', RESTRICTED: 'restricted' },
