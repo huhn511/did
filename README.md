@@ -10,3 +10,53 @@ This is a work-in-progress library for Digital Identity on IOTA. It follows the 
   <img src="assets/structure.svg"/>
 </div>
 > structure.svg
+
+
+## Functions
+Implemented functions based on [identity.ts](https://github.com/iotaledger/identity.ts)
+
+```javascript
+{
+  DID: [Function: DID] { urlScheme: 'did', didMethod: 'IOTA' },
+  DIDDocument: [Function: DIDDocument] {
+    readDIDDocument: [Function],
+    createDIDDocument: [Function]
+  },
+  Service: [Function: Service],
+  BaseKeypair: [Function: BaseKeypair],
+  RSAKeypair: [Function: RSAKeypair],
+  ECDSAKeypair: [Function: ECDSAKeypair],
+  Hash: [Function: Hash],
+  CreateRandomDID: [Function: CreateRandomDID],
+  CreateRandomDIDFromPublicKey: [Function: CreateRandomDIDFromPublicKey],
+  DecodeProofDocument: [Function: DecodeProofDocument],
+  SignDIDAuthentication: [Function: SignDIDAuthentication],
+  VerifyDIDAuthentication: [Function: VerifyDIDAuthentication],
+  GenerateRSAKeypair: [Function: GenerateRSAKeypair],
+  GenerateECDSAKeypair: [Function: GenerateECDSAKeypair],
+  GenerateSeed: [Function: GenerateSeed],
+  DIDPublisher: [Function: DIDPublisher],
+  MAMSettings: [Function: MAMSettings],
+  MAM_MODE: { PRIVATE: 'private', PUBLIC: 'public', RESTRICTED: 'restricted' },
+  Proof: [Function: Proof],
+  ProofTypeManager: [Function: ProofTypeManager] { GetInstance: [Function] },
+  Credential: [Function: Credential] {
+    Create: [Function],
+    DecodeFromJSON: [Function]
+  },
+  Presentation: [Function: Presentation] {
+    Create: [Function],
+    DecodeFromJSON: [Function]
+  },
+  Schema: [Function: Schema],
+  SchemaManager: [Function: SchemaManager] { GetInstance: [Function] },
+  VerifiableCredential: [Function: VerifiableCredential] {
+    Create: [Function],
+    DecodeFromJSON: [Function]
+  },
+  VerifiablePresentation: [Function: VerifiablePresentation] {
+    Create: [Function],
+    DecodeFromJSON: [Function]
+  }
+}
+```
