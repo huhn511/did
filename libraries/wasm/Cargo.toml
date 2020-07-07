@@ -1,0 +1,19 @@
+[package]
+name = "iota-did-wasm"
+version = "0.0.1"
+authors = ["huhn511 <huhn@einfachiota.de>"]
+edition = "2018"
+repository = "https://github.com/huhn511/did"
+homepage = "https://github.com/huhn511/did"
+license = "MIT"
+
+[lib]
+crate-type = ["cdylib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+wasm-bindgen = { version = "0.2", features = ["serde-serialize"] }
+wasm-bindgen-futures = "0.4"
+console_error_panic_hook = "0.1.6"
+did = { path = "../../" }
