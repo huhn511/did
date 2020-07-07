@@ -11,3 +11,13 @@ path = "src/lib.rs"
 
 [dependencies]
 rand = "0.7.3"
+
+
+[workspace]
+exclude = [
+    "libraries/c",
+    "libraries/go",
+    "libraries/java",
+    "libraries/python",
+    "libraries/wasm",
+]
