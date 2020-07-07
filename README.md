@@ -36,7 +36,7 @@ Implemented functions based on [identity.ts](https://github.com/iotaledger/ident
   VerifyDIDAuthentication: [Function: VerifyDIDAuthentication],
   GenerateRSAKeypair: [Function: GenerateRSAKeypair],
   GenerateECDSAKeypair: [Function: GenerateECDSAKeypair],
-  GenerateSeed: [Function: GenerateSeed], // ✅
+  ✅ GenerateSeed: [Function: GenerateSeed], 
   DIDPublisher: [Function: DIDPublisher],
   MAMSettings: [Function: MAMSettings],
   MAM_MODE: { PRIVATE: 'private', PUBLIC: 'public', RESTRICTED: 'restricted' },
