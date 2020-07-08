@@ -19,10 +19,18 @@ macro_rules! console_error {
 }
 
 #[wasm_bindgen(js_name = "GenerateSeed")]
-pub fn add_node() -> Result<String, JsValue> {
+pub fn generate_seed() -> Result<String, JsValue> {
     console_error_panic_hook::set_once();
 
     let seed = generate_seed::new();
     println!("Seed: {:?}", seed);
     Ok(seed)
+  }
+  
+  #[wasm_bindgen(js_name = "Greet")]
+  pub fn greet() -> Result<String, JsValue> {
+    console_error_panic_hook::set_once();
+    let greet = did::greet();
+    println!("greet: {:?}", greet);
+    Ok(greet)
 }
