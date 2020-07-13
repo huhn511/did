@@ -2,18 +2,16 @@
 //! To Generate a new RSA Keypair
 //!
 
+use bs58;
 use ed25519_compact::*;
 
+pub fn new() -> String {
+    // Generates a new key pair using a random seed.
+    // A given seed will always produce the same key pair.
+    let key_pair = KeyPair::from_seed(Seed::default());
 
-pub fn new() -> () {
-    
-// Generates a new key pair using a random seed.
-// A given seed will always produce the same key pair.
-let key_pair = KeyPair::from_seed(Seed::default());
-
-// Verifies the signature using the public part of the key pair.
-println!("key_pair public key: {:?}", key_pair.pk);
-
+    // Envode the public key to base58 and return it.
+    bs58::encode(key_pair.pk.to_vec()).into_string()
 }
 
 #[cfg(test)]
