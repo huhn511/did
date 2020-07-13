@@ -1,4 +1,6 @@
 pub mod utils;
+pub mod DID;
+
 
 pub fn greet() -> String {
     "Hello World!".to_owned()
