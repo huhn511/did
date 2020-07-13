@@ -1,15 +1,15 @@
 //!
-//! To Generate a new Random Seed
+//! To Generate a new RSA Keypair
 //!
 
-use openssl::rsa::{Rsa};
-use openssl::pkey::{PKey};
+// use openssl::rsa::{Rsa};
+// use openssl::pkey::{PKey};
 
 pub fn new() -> String {
     
-    let rsa = Rsa::generate(2048).unwrap();
-    let privkey = PKey::from_rsa(rsa).unwrap();
-    println!("privkey: {:?}", &privkey);
+    // let rsa = Rsa::generate(2048).unwrap();
+    // let privkey = PKey::from_rsa(rsa).unwrap();
+    // println!("privkey: {:?}", &privkey);
     "41".to_owned()
 }
 

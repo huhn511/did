@@ -1,10 +1,10 @@
-//! Get an unused address from a connected node.
-//!
-//! Run with:
-//!
-//! ```
-//! cargo run --example generate_rsa_keypair
-//! ```
+// ! Get an unused address from a connected node.
+// !
+// ! Run with:
+// !
+// ! ```
+// ! cargo run --example generate_rsa_keypair
+// ! ```
 
 use did::utils::generate_rsa_keypair;
 
