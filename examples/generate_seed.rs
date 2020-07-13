@@ -1,4 +1,4 @@
-//! Get an unused address from a connected node.
+//! Create a random seed.
 //!
 //! Run with:
 //!
