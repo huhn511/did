@@ -16,7 +16,7 @@
 //! ```
 
 use did::utils::generate_seed;
-use did::DID::DID;
+use did::DID;
 
 fn main() {
 
@@ -25,6 +25,6 @@ fn main() {
     
     let did =  DID::new(seed);
     println!("did: {:?}", did);
-    println!("did string: {:?}", did.GetDID());
+    println!("did string: {:?}", did.get_did());
     
 }
