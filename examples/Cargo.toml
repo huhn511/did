@@ -1,0 +1,26 @@
+[package]
+name = "examples"
+version = "0.0.1"
+authors = ["huhn511 <huhn@einfachiota.de>"]
+edition = "2018"
+publish = false
+
+[dev-dependencies]
+did-helpers = { path = "../did-helpers" }
+did-core = { path = "../did-core" }
+
+[[example]]
+name = "generate_seed"
+path = "generate_seed.rs"
+
+[[example]]
+name = "generate_rsa_keypair"
+path = "generate_rsa_keypair.rs"
+
+[[example]]
+name = "generate_ed25519_keypair"
+path = "generate_ed25519_keypair.rs"
+
+[[example]]
+name = "create_did"
+path = "create_did.rs"

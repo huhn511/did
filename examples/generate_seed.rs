@@ -6,7 +6,7 @@
 //! cargo run --example generate_seed
 //! ```
 
-use did::utils::generate_seed;
+use did_helpers::utils::generate_seed;
 
 fn main() {
 

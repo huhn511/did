@@ -6,7 +6,7 @@
 //! cargo run --example generate_ed25519_keypair
 //! ```
 
-use did::utils::generate_ed25519_keypair;
+use did_helpers::utils::generate_ed25519_keypair;
 
 fn main() {
 

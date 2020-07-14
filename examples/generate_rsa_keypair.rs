@@ -6,7 +6,7 @@
 // ! cargo run --example generate_rsa_keypair
 // ! ```
 
-use did::utils::generate_rsa_keypair;
+use did_helpers::utils::generate_rsa_keypair;
 
 fn main() {
 

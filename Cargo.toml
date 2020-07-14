@@ -1,20 +1,9 @@
-[package]
-name = "did"
-version = "0.0.1"
-authors = ["huhn511 <huhn@einfachiota.de>"]
-edition = "2018"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-[lib]
-name = "did"
-path = "src/lib.rs"
-
-[dependencies]
-rand = "0.7.3"
-ed25519-compact = "0.1"
-bs58 = "0.3.1"
-
 [workspace]
+members = [
+    "did-core",
+    "did-helpers",
+    "examples"
+ ]
 exclude = [
     "libraries/c",
     "libraries/go",

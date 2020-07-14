@@ -1,21 +1,3 @@
-pub mod utils;
-
-pub fn greet() -> String {
-    "Hello World!".to_owned()
-}
-
-#[cfg(test)]
-mod tests {
-
-    use super::*;
-
-    #[test]
-    fn test_greet() {
-        assert_eq!("Hello World!", greet())
-    }
-}
-
-
 #[derive(Debug)]
 pub struct DID {
     pub network: String,
@@ -30,7 +12,7 @@ impl DID {
         DID {
             network: "main".to_owned(),
             url_scheme: "did".to_owned(),
-            did_method: "IOTA".to_owned(),
+            did_method: "iota".to_owned(),
             uuid: did.to_owned(),
         }
     }

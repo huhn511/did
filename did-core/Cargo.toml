@@ -1,0 +1,11 @@
+[package]
+name = "did-core"
+version = "0.0.1"
+authors = ["huhn511 <huhn@einfachiota.de>"]
+edition = "2018"
+description = "Core library of IOTA DID"
+license = "MIT"
+
+[lib]
+name = "did"
+path = "src/lib.rs"

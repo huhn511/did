@@ -12,10 +12,10 @@
 //! DID::new called!
 //! did: DID { network: "main", uuid: "WUDVYBCONWBLKMHECWXIUROMMKYOZAEQTZEICFRZGSXBIZJONJAWQWOVOJNNWKKIEPVATUB9KKD9PMOLU", urlScheme: "did", didMethod: "IOTA" }
 //! DID::GetDID called!
-//! did string: "did:IOTA:WUDVYBCONWBLKMHECWXIUROMMKYOZAEQTZEICFRZGSXBIZJONJAWQWOVOJNNWKKIEPVATUB9KKD9PMOLU"
+//! did string: "did:iota:WUDVYBCONWBLKMHECWXIUROMMKYOZAEQTZEICFRZGSXBIZJONJAWQWOVOJNNWKKIEPVATUB9KKD9PMOLU"
 //! ```
 
-use did::utils::generate_seed;
+use did_helpers::utils::generate_seed;
 use did::DID;
 
 fn main() {

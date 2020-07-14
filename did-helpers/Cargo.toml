@@ -1,0 +1,16 @@
+[package]
+name = "did-helpers"
+version = "0.0.1"
+authors = ["huhn511 <huhn@einfachiota.de>"]
+edition = "2018"
+description = "Helper library of IOTA DID"
+license = "MIT"
+
+[lib]
+name = "did_helpers"
+path = "src/lib.rs"
+
+[dependencies]
+rand = "0.7.3"
+ed25519-compact = "0.1"
+bs58 = "0.3.1"
