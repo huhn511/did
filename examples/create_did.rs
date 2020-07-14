@@ -17,6 +17,7 @@
 
 use did_helpers::utils::generate_seed;
 use did::DID;
+use did::DIDDocument;
 
 fn main() {
 
@@ -26,5 +27,7 @@ fn main() {
     let did =  DID::new(seed);
     println!("did: {:?}", did);
     println!("did string: {:?}", did.get_did());
-    
+    let document =  DIDDocument::new(did);
+    println!("document: {:?}", document);
+
 }
