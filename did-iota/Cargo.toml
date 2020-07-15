@@ -1,0 +1,17 @@
+[package]
+name = "did-iota"
+version = "0.0.1"
+authors = ["huhn511 <huhn@einfachiota.de>"]
+edition = "2018"
+description = "IOTA library of IOTA DID"
+license = "MIT"
+
+[lib]
+name = "did_iota"
+path = "src/lib.rs"
+
+[dependencies]
+did-core = { version = "0.0.1", path = "../did-core" }
+iota-core = "0.2.0-alpha.3"
+anyhow = "1.0.28"
+iota-conversion = "0.5.1"

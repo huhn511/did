@@ -2,6 +2,7 @@
 members = [
     "did-core",
     "did-helpers",
+    "did-iota",
     "examples"
  ]
 exclude = [

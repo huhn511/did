@@ -6,8 +6,11 @@ edition = "2018"
 publish = false
 
 [dev-dependencies]
-did-helpers = { path = "../did-helpers" }
 did-core = { path = "../did-core" }
+did-helpers = { path = "../did-helpers" }
+did-iota = { path = "../did-iota" }
+smol = {version = "0.1.18", features = ["tokio02"] }
+smol-potat = "0.3.1"
 
 [[example]]
 name = "generate_seed"
@@ -24,3 +27,7 @@ path = "generate_ed25519_keypair.rs"
 [[example]]
 name = "create_did"
 path = "create_did.rs"
+
+[[example]]
+name = "publish_did"
+path = "publish_did.rs"
