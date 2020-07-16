@@ -12,6 +12,5 @@ path = "src/lib.rs"
 
 [dependencies]
 did-core = { version = "0.0.1", path = "../did-core" }
-iota-core = "0.2.0-alpha.3"
-anyhow = "1.0.28"
+iota-core = { git = "https://github.com/iotaledger/iota.rs" }
 iota-conversion = "0.5.1"
