@@ -14,3 +14,4 @@ path = "src/lib.rs"
 did-core = { version = "0.0.1", path = "../did-core" }
 iota-core = { git = "https://github.com/iotaledger/iota.rs" }
 iota-conversion = "0.5.1"
+serde_json = "1.0"

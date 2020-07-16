@@ -9,3 +9,6 @@ license = "MIT"
 [lib]
 name = "did"
 path = "src/lib.rs"
+
+[dependencies]
+serde = "1.0.114"

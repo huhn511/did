@@ -1,5 +1,6 @@
+use serde::{Deserialize, Serialize};
 
-#[derive(Debug)]
+#[derive(Debug, Serialize, Deserialize)]
 pub struct DID {
     pub network: String,
     pub uuid: String,

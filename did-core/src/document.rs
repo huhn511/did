@@ -1,5 +1,7 @@
 use crate::did::*;
-#[derive(Debug)]
+use serde::{Deserialize, Serialize};
+
+#[derive(Debug, Serialize, Deserialize)]
 pub struct DIDDocument {
     did: DID
 }
