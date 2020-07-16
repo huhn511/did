@@ -11,6 +11,6 @@ name = "did_helpers"
 path = "src/lib.rs"
 
 [dependencies]
-rand = "0.7.3"
+rand = { version = "0.7.3", features = ["wasm-bindgen"] }
 ed25519-compact = "0.1"
 bs58 = "0.3.1"
