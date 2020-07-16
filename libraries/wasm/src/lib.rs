@@ -1,5 +1,5 @@
 use wasm_bindgen::prelude::*;
-use did::utils::generate_seed;
+use did_helpers::utils::generate_seed;
 
 
 #[wasm_bindgen]
@@ -30,7 +30,7 @@ pub fn generate_seed() -> Result<String, JsValue> {
   #[wasm_bindgen(js_name = "Greet")]
   pub fn greet() -> Result<String, JsValue> {
     console_error_panic_hook::set_once();
-    let greet = did::greet();
+    let greet = did_helpers::greet();
     println!("greet: {:?}", greet);
     Ok(greet)
 }
