@@ -16,4 +16,6 @@ crate-type = ["cdylib"]
 wasm-bindgen = { version = "0.2", features = ["serde-serialize"] }
 wasm-bindgen-futures = "0.4"
 console_error_panic_hook = "0.1.6"
-did = { path = "../../" }
+did-core = { path = "../../did-core" }
+did-helpers = { path = "../../did-helpers" }
+did-iota = { path = "../../did-iota" }
