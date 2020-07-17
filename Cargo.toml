@@ -1,9 +1,23 @@
+[package]
+name = "did-cli"
+version = "0.0.1"
+authors = ["huhn511 <huhn@einfachiota.de>"]
+edition = "2018"
+
+[dependencies]
+clap = "3.0.0-beta.1"
+did-core = { version = "0.0.1", path = "./did-core" }
+did-helpers = { version = "0.0.1", path = "./did-helpers" }
+did-iota = { version = "0.0.1", path = "./did-iota" }
+
+smol = {version = "0.1.18", features = ["tokio02"] }
+smol-potat = "0.3.1"
+
 [workspace]
 members = [
     "did-core",
     "did-helpers",
     "did-iota",
-    "examples"
  ]
 exclude = [
     "libraries/c",

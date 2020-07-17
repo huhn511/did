@@ -61,3 +61,9 @@ Implemented functions based on [identity.ts](https://github.com/iotaledger/ident
   }
 }
 ```
+
+## Build and run WASI
+```bash
+cargo wasi build
+wasmtime target/wasm32-wasi/debug/did-cli.wasm did generate-seed
+```

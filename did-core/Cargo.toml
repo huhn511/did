@@ -11,4 +11,4 @@ name = "did"
 path = "src/lib.rs"
 
 [dependencies]
-serde = "1.0.114"
+serde = { version = "1.0", features = ["derive"] }

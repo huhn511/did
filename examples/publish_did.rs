@@ -15,6 +15,7 @@ use did_helpers::utils::generate_seed;
 use did_iota::DIDPublisher;
 use did::DID;
 use did::DIDDocument;
+
 #[smol_potat::main]
 async fn main() -> () {
 
