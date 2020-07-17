@@ -1,0 +1,14 @@
+[package]
+name = "huhn/did-cli"
+version = "0.0.1"
+description = "did cli test"
+license = "MIT"
+
+[[module]]
+name = "did-cli"
+source = "target/wasm32-wasi/release/did-cli.wasm"
+abi = "wasi"
+
+[[command]]
+name = "did-cli"
+module = "did-cli"
